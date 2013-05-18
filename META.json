@@ -1,0 +1,81 @@
+{
+   "abstract" : "Manager package of Master High Availability Manager and tools for MySQL (MHA)",
+   "author" : [
+      "DeNA Co.,Ltd."
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Minilla/v0.4.2, CPAN::Meta::Converter version 2.130880",
+   "license" : [
+      "gpl_1"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "MHA-Manager",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples",
+         "author"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.36"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "CPAN::Meta" : "0",
+            "CPAN::Meta::Prereqs" : "0",
+            "Module::Build" : "0.38"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion" : "0.10108",
+            "Test::Pod" : "1.41",
+            "Test::Spellunker" : "v0.2.2"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Config::Tiny" : "0",
+            "DBD::mysql" : "0",
+            "DBI" : "0",
+            "Log::Dispatch" : "0",
+            "MHA::NodeConst" : "0",
+            "Parallel::ForkManager" : "0",
+            "Time::HiRes" : "0",
+            "perl" : "5.008005"
+         }
+      }
+   },
+   "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/riywo/MHA-Manager/issues"
+      },
+      "homepage" : "https://github.com/riywo/MHA-Manager",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/riywo/MHA-Manager.git",
+         "web" : "https://github.com/riywo/MHA-Manager"
+      }
+   },
+   "version" : "0.55",
+   "x_contributors" : [
+      "Michael H. Oshita <ijinpublic+github@gmail.com>",
+      "Yoshinori Matsunobu <yoshinori.matsunobu@gmail.com>",
+      "Cyril Scetbon <cscetbon@atid.fr>",
+      "Kaiwang Chen <kaiwang.chen@gmail.com>",
+      "Yoshinori Matsunobu <Yoshinori.Matsunobu@gmail.com>"
+   ]
+}
