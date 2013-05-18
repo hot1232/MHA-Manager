@@ -22,9 +22,10 @@ package MHA::ManagerConst;
 use strict;
 use warnings FATAL => 'all';
 
+use MHA::Manager;
 use MHA::NodeConst;
 
-our $VERSION          = '0.55';
+our $VERSION          = $MHA::Manager::VERSION;
 our $NODE_MIN_VERSION = '0.54';
 
 our @ALIVE_ERROR_CODES = (
